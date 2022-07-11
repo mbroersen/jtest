@@ -1,10 +1,10 @@
 {
-  "name": "jtest",
+  "name": "justtests",
   "version": "0.0.1",
   "description": "testframework witouth dependency hell",
-  "main": "jtest.js",
+  "main": "justtests.js",
   "scripts": {
-    "test": "jtest"
+    "test": "justtests"
   },
   "repository": {
     "type": "git",
@@ -14,7 +14,9 @@
     "test",
     "unit",
     "test",
-    "framework"
+    "framework",
+    "just",
+    "tests"
   ],
   "author": "mbroersen",
   "license": "MIT",
@@ -24,6 +26,6 @@
   "homepage": "https://github.com/mbroersen/jtest#readme",
   "type": "module",
   "bin": {
-    "jtest": "jtest.js"
+    "justtests": "justtests.js"
   }
 }
