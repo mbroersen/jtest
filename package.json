@@ -1,0 +1,29 @@
+{
+  "name": "jtest",
+  "version": "0.1.0",
+  "description": "testframework witouth dependency hell",
+  "main": "jtest.js",
+  "scripts": {
+    "test": "jtest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mbroersen/jtest.git"
+  },
+  "keywords": [
+    "test",
+    "unit",
+    "test",
+    "framework"
+  ],
+  "author": "mbroersen",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mbroersen/jtest/issues"
+  },
+  "homepage": "https://github.com/mbroersen/jtest#readme",
+  "type": "module",
+  "bin": {
+    "jtest": "jtest.js"
+  }
+}
