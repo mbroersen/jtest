@@ -2,10 +2,13 @@ import * as fs from "fs";
 import * as path from "path";
 
 export default class TestSuite {
+    /**
+     * @description will read the directory to load all tests of test suite
+     *
+     * @param string path
+     */
     constructor(path) {
         this.path = path;
-
-        const files = fs.readdirSync(this.path);
     }
 
     /**
@@ -14,7 +17,6 @@ export default class TestSuite {
      * @return {Generator<string|any, void, any>}
      */
     * tests() {
-
         const files = fs.readdirSync(this.path);
         for (const file of files) {
             const filePath = `${this.path}${path.sep}${file}`;

@@ -1,26 +1,22 @@
 import TestSuite from './TestSuite.js';
 import Test from './Test.js';
-import * as assert from "assert";
 
-export default class JTest {
+export default class JustTests {
 
     constructor(testDirectory) {
         this.tests = new Map();
         this.failedTests = new Map();
         this.successFullTests = new Set();
         this.testDirectory = testDirectory;
-        this.assertTracker = new assert.CallTracker();
-        globalThis.JTest = this;
+        globalThis.JustTest = this;
     }
 
-    static addTest(name, callable)
-    {
-        globalThis.JTest.addTest(name, callable);
+    static addTest(name, callable) {
+        globalThis.JustTest.addTest(name, callable);
     }
 
-    static get numberOfTests()
-    {
-        return globalThis.JTest.tests.size;
+    static get numberOfTests() {
+        return globalThis.JustTest.tests.size;
     }
 
     addTest(name, callable) {
@@ -68,17 +64,13 @@ export default class JTest {
             }
             process.exit(1);
         }
-
     }
 
     info() {
-        process.stderr.write('\n');
-        process.stderr.write(`💼 tests: ${this.tests.size}\n`);
+        process.stderr.write('Just\n');
+        process.stderr.write(`💼  tests: ${this.tests.size}\n`);
         process.stderr.write(`⏱  time: ${process.uptime()}ms\n`);
         process.stderr.write(`💻 mem: ${(process.memoryUsage().heapTotal / 1024 / 1024).toFixed(1)}mb\n`);
         process.stderr.write('\x1b[0m\n');
-
-        console.log(this.assertTracker.verify());
     }
-
 }
