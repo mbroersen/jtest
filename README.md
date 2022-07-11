@@ -1,4 +1,4 @@
-# jtest
+# JustTests
 Test framework without dependency hell.
 
 # Getting started
