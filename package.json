@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/mbroersen/jtest.git"
+    "url": "git+https://github.com/mbroersen/justtests.git"
   },
   "keywords": [
     "test",
@@ -21,9 +21,9 @@
   "author": "mbroersen",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/mbroersen/jtest/issues"
+    "url": "https://github.com/mbroersen/justtests/issues"
   },
-  "homepage": "https://github.com/mbroersen/jtest#readme",
+  "homepage": "https://github.com/mbroersen/justtests#readme",
   "type": "module",
   "bin": {
     "justtests": "justtests.js"
